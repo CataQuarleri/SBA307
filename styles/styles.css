@@ -12,13 +12,19 @@ dark green: #8EBC38
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
+    display: flex;
+    flex-flow: wrap column;
     background-color: #F5C07A;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 5rem;
     color: #fffbff;
+    padding: 0;
+    margin: 0;
 }
 
 li, a {
@@ -83,16 +89,20 @@ li, a {
 
 .mainContainer {
     display: flex;
+    flex-flow: wrap column;
+    align-items: center;
     justify-content: center;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 60px;
+    flex-grow: 1;
 }
+
+/* Home */
 
 .upperContent {
     display: flex;
+    justify-content: center;
     width: 70vw;
-    height: 50vh;
-    margin-top: 10px;
+    margin-top: 70px;
     overflow: hidden;
 }
 
@@ -110,13 +120,26 @@ li, a {
     text-align: center;
 }
 
+.initialButton {
+    background-color: #D4E8B0;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0.5px solid #8EBC38
+}
+
+.initialButton:hover {
+    background-color: #AFD36B;
+}
+
 .rightContentUpperContainer {
     display: flex;
     flex-flow: wrap;
     align-content: flex-end;
     align-items: center;
     justify-content: flex-end;
-    /* border: 1px solid black; */
+    border-bottom: 1px solid #8EBC38;
     overflow: hidden;
 }
 .imgTransition {
@@ -126,31 +149,52 @@ li, a {
     cursor: grab;
 }
 
-.grass {
-    /* position: relative;
-    left: -260px;
-    top: 150px; */
-    float:inline-start;
-    z-index: 5;
-    width: 300px;
-}
-
-
-
 .imgTransition:hover {
     transform: translateY(0px);
 }
 
+.bottomContainer {
+    width: 100%;
+    height: 500px;
+}
 
+/* Clients */
+
+.clientUpperContainer {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #d4e8b0c4;
+}
+
+.petStories {
+ width: 400px;
+ margin: auto;
+ padding: 40px;
+ font-size: 20px;
+}
+
+.clientLowerContainer {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #d4e8b0c4;
+}
 
 /* footer */
 
-footer {
+.footer {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
     background-color: #D17D10;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
+    /* position: relative;
+    bottom: 0; */
     width: 100%;
-    height: 5rem;  
+    height: 15rem;  
 }
 
 @media (max-width: 767px) {
