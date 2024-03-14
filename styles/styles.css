@@ -25,6 +25,7 @@ body {
     color: #fffbff;
     padding: 0;
     margin: 0;
+    font-size: calc(1rem + 0.25vw);
 }
 
 li, a {
@@ -45,8 +46,9 @@ li, a {
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 20px;
     width: 100%;
-    height: 12vh;
+    height: 20vh;
     border-bottom: 1px solid #fffbff;
 }
 
@@ -65,7 +67,7 @@ li, a {
     margin-right: 10px;
     border-right: 1px solid #fffbff;
     color: #fffbff;
-    font-size: 20px;
+    font-size: calc(1rem + 0.25vw);
     transition-property: backgroud-color, font-size;
     transition-duration: 3s;
     transition-timing-function: step-start;
@@ -74,7 +76,7 @@ li, a {
 .navLink:hover {
     background-color: #AFD36B;
     height: 100%;
-    font-size: 22px;
+    font-size: calc(1rem + 0.30vw);
 }
 
 #nav4 {
@@ -98,11 +100,11 @@ li, a {
 
 /* Home */
 
-.upperContent {
+.homeUpperSection {
     display: flex;
     justify-content: center;
     width: 70vw;
-    margin-top: 70px;
+    margin-top: 1vh;
     overflow: hidden;
 }
 
@@ -160,14 +162,6 @@ li, a {
 
 /* Clients */
 
-.clientUpperContainer {
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    margin-top: 40px;
-    background-color: #d4e8b0c4;
-}
-
 .petStories {
  width: 400px;
  margin: auto;
@@ -175,17 +169,19 @@ li, a {
  font-size: 20px;
 }
 
-.clientLowerContainer {
+.clientCardContainer {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
     margin-top: 40px;
+    width: 1000px;
     background-color: #d4e8b0c4;
+    box-shadow: 5px 6px 18px 0px rgba(0,0,0,0.44);
 }
 
 /* footer */
 
-.footer {
+/* .footer {
     display: flex;
     align-self: flex-end;
     justify-content: flex-end;
@@ -193,13 +189,13 @@ li, a {
     margin-top: auto;
     /* position: relative;
     bottom: 0; */
-    width: 100%;
+    /* width: 100%;
     height: 15rem;  
-}
+} */
 
 @media (max-width: 767px) {
 
-    .upperContent {
+    .homeUpperSection {
         flex-flow: wrap column;
         overflow: visible
     }
