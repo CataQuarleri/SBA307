@@ -19,9 +19,15 @@
             style="width: 9em; margin-left: 40px"
         /></a>
         <div class="navList">
-            <div class="navLink" id="nav1"><a href="">Home</a></div>
-            <div class="navLink" id="nav2">Services</div>
-            <div class="navLink" id="nav3">Clients</div>
+            <div class="navLink" id="nav1">
+                <a href="./home.html"> Home </a>
+            </div>
+            <div class="navLink" id="nav2">
+                <a href="./services.html">Services</a>
+            </div>
+            <div class="navLink" id="nav3">
+                <a href="./clients.html">Clients</a>
+            </div>
             <div class="dropdown" >
                 <div class="dropdown dropbtn navLink" id="nav4">Sign In
                   <i class="fa fa-caret-down"></i>
@@ -37,7 +43,36 @@
         </header>
         <div class="mainContainer">
             <div class="formsContainer">
-<div class="formBox">
+                <div id="registerForm">
+                    <div class="formBox">
+                    <h3>Create your account!</h3>
+                    <form action="submit" class="registerForm">
+                        <div class="formInput">
+                            <input type="text" placeholder="Username">
+                            </div>
+                            <div class="formInput">
+                                <p>What type of pet do you have?</p>
+                                <input type="checkbox" placeholder="Dog">
+                                <label for="">Dog                </label>
+                                <input type="checkbox" placeholder="Dog">
+                <label for="">Cat</label>
+                                <input type="checkbox" placeholder="Dog">
+                               <label for="">Bird/s</label>  
+                            </div>
+                        <div class="formInput">
+                        <input type="email" placeholder="Email">
+                        </div>
+                        <div class="formInput">
+                        <input type="password" placeholder="Password">
+                        </div>
+                        <button type="submit">Log In</button>
+                    </form>
+                    <a href="#" class="clickMe">I already have an account</a>
+                
+                </div>
+                </div>
+
+<div class="formBox" id="loginForm">
     <h3>Welcome Back!</h3>
     <form action="submit" class="loginForm">
         <div class="formInput">
@@ -49,37 +84,10 @@
         <button type="submit">Log In</button>
     </form>
     <a href="#">Forgot Password?</a>
-    <a href="#registerForm">Create a new account</a>
+    <a href="#registerForm" class="clickMe">Create a new account (click me please)</a>
 </div>
 
-<div id="registerForm">
-    <div class="formBox">
-    <h3>Create your account!</h3>
-    <form action="submit" class="registerForm">
-        <div class="formInput">
-            <input type="text" placeholder="Username">
-            </div>
-            <div class="formInput">
-                <p>What type of pet do you have?</p>
-                <input type="checkbox" placeholder="Dog">
-                <label for="">Dog                </label>
-                <input type="checkbox" placeholder="Dog">
-<label for="">Cat</label>
-                <input type="checkbox" placeholder="Dog">
-               <label for="">Bird/s</label>  
-            </div>
-        <div class="formInput">
-        <input type="email" placeholder="Email">
-        </div>
-        <div class="formInput">
-        <input type="password" placeholder="Password">
-        </div>
-        <button type="submit">Log In</button>
-    </form>
-    <a href="#">I already have an account</a>
 
-</div>
-</div>
 </div>
         </div>
 </body>

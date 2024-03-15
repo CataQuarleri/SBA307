@@ -297,13 +297,13 @@ form button:hover {
     text-align: center;
 }
 
-#demo:checked +  .loginForm{
-    display: none;
-    /* visible: hidden */
-}
 .registerForm {
     display: flex;
     flex-flow: wrap column;
+}
+
+.clickMe {
+    text-decoration: underline;
 }
 
 #registerForm {
@@ -312,6 +312,10 @@ form button:hover {
 
 #registerForm:target {
     display: block
+}
+
+#registerForm:target ~ #loginForm {
+    display: none;
 }
 /* footer */
 
