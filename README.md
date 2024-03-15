@@ -1,4 +1,12 @@
 # SBA307
+### This project is a responsive website for a pet sitting service created only with HTML and CSS. It was styled as desktop first and uses media queries for mobile access.
+<br>
+If the user accesses the website from a desktop, they'll see a neat header with a fully functional navbar showing all the navlinks available and a dropdown menu in the navbar that is signaled with an arrow down icon. When hovering on the Sign Up nav link the dropdown menu shows up and gives the option to Login and register as a client or Login as an admin. 
+The homepage hides a cute animation that activates on hover. 
+<br>
+If the user accesses from a mobile device, the navbar gets hidden under a burger menu. The icon on the navbar gets activated on click (through a hidden checkbox) and shows a side menu and an overlay on top of the main container. The side menu can be hidden by clicking again anywhere inside the menu except for the links. On mobile device there are also some difference from the desktop mode, for example all the cards from the client stories and welcome page are set vertically. 
+<br>
+The Login/Register page for clients features 2 forms but it only shows one at a time. Login form is the one showing by default but if the user needs to create an account, by clicking the link at the bottom of the card the login form hides and a register form takes it place. This was accomplished by using the :target pseudo-class.
 
 ### For this Skills Based Assesment, I completed the following requirements: 
 
@@ -6,11 +14,11 @@
 - Have at least three pages.
   - There are 4 pages including "Home", "Clients", "Services" and "Client Login/Register"
 - Keep the grid system consistent between pages as much as possible.
-  - I've used the same navBar for every page and duplicated some of the content containers tu mantain a consistent grid
+  - I've used the same navBar for every page and duplicated some of the content containers to mantain a consistent grid
 - Use at least ten different HTML tags. -
   - Just in the homepage I used: "html", "head", "meta", "link", "title", "script", "body", "header", "nav", "a", "img", "div", "main", "h1", "p", "strong" and "button" 
 - Include at least one table.
-  - The service page includes a table with a header, 3 columns and 4 rows.
+  - The service page includes a table with a header, 3 columns and 4 rows. The base of the table is made with bootstrap but I modified some of the styling to keep a consistent color.
 - Include at least two forms.
   - Under the Sign In dropdown, the Client Login/Register shows one form, but if you click on the "Create account" link, there's a surprise! 
 - Include at least one dropdown menu.
