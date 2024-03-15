@@ -11,7 +11,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar">
+    <div class="navbar">
         <a href="./home.html"><img
             src="../images/logo.png"
             alt=""
@@ -32,7 +32,33 @@
                 </div>
                     </div>
         <hr>
-    </nav>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="burgerMenu" for="hamburger-input">
+            <i class="fa-solid fa-bars fa-2x" id="burgerIcon"></i>
+            <nav class="sidebarMenu">
+                <ul>
+                    <li class="hover">
+                        <a href="./home.html"> Home </a>
+                    </li>
+                    <li class="hover">
+                        <a href="./services.html" >Services</a>
+                    </li>
+                    <li class="hover">
+                        <a href="./clients.html">Clients</a>
+                    </li>
+                    <hr>
+                    <li class="hover">
+                        <a href="./loginRegister.html" >Login/Register</a>
+                    </li>
+                    <li class="hover">
+                        <a href="./adminDashboard.html" >Admin Login</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </label>
+        <div class="overlay"></div>
+    </div>
         </header>
         <main>
             <div class="mainContainer">
@@ -43,12 +69,12 @@
                         <div class="petStories">
                             Doug, the witty pup, enjoys keeping his family abreast of the household antics by dialing them up for a canine conference call, ensuring they're always in the loop, albeit with a touch of playful mischief.</div>
                         </div>
-                        <div class="clientCardContainer">
+                        <div class="clientCardContainer" id="middleContainer">
                             <div class="petStories">
                                 
                                 Caught in a comedic dilemma, Buddy depends on his watchful pet sitter to shield him from Jack, the crafty cat. With a knack for mischief, Jack locks the door, leaving Buddy stranded outside, turning the pet sitter into an unexpected mediator in this amusing clash of animal antics.
                             </div>
-                            <div class="gifContainer">
+                            <div class="gifContainer" >
                                 <img src="https://bestgifs.makeagif.com/wp-content/uploads/2016/06/dogcatdoor.gif" alt="" style="object-fit: contain; width: 600px">
                             </div>
                         </div>

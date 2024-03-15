@@ -24,7 +24,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
+			<div class="navbar">
                 <a href="./home.html"><img
 					src="../images/logo.png"
 					alt=""
@@ -50,7 +50,33 @@
                           </div>
                         </div>
 				</div>
-			</nav>
+				<input type="checkbox" id="hamburger-input" class="burger-shower" />
+				<label id="burgerMenu" for="hamburger-input">
+					<i class="fa-solid fa-bars fa-2x" id="burgerIcon"></i>
+					<nav class="sidebarMenu">
+						<ul>
+							<li class="hover">
+								<a href="./home.html"> Home </a>
+							</li>
+							<li class="hover">
+								<a href="./services.html" >Services</a>
+							</li>
+							<li class="hover">
+								<a href="./clients.html">Clients</a>
+							</li>
+							<hr>
+							<li class="hover">
+								<a href="./loginRegister.html" >Login/Register</a>
+							</li>
+							<li class="hover">
+								<a href="./adminDashboard.html" >Admin Login</a>
+							</li>
+						</ul>
+
+					</nav>
+				</label>
+				<div class="overlay"></div>
+			</div>
 		</header>
 		<main>
 			<div class="mainContainer">
